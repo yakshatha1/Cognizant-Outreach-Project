@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+		<listener class-name="com.outreach.Utilities.Extent_Reports"></listener>
+	</listeners>
+  <test thread-count="5" name="Test">
+  	
+  <parameter name="browser" value="chrome"></parameter>
+    <classes>
+    <class name="com.outreach.testcases.BaseTest"/>
+    <class name="com.outreach.testcases.CaptureUserInfo"/>
+     <class name="com.outreach.testcases.ClickOneCognizant"/>
+     <class name="com.outreach.testcases.NavigateToOutReach"/>
+     <class name="com.outreach.testcases.MenusAndSubmenus"/>
+     <class name="com.outreach.testcases.IntrestEvents"/>
+     <class name="com.outreach.testcases.SearchFilterValidation"/>
+     <class name="com.outreach.testcases.RandomLocation"/>
+     <class name="com.outreach.testcases.SelectMyVolunteering"/>
+     <class name="com.outreach.testcases.GetVolunteerCards"/>
+    </classes>
+  </test> <!-- Test -->
+  
+   <!-- 
+    <test thread-count="5" name="Test1">
+  	
+  <parameter name="browser" value="edge"></parameter>
+    <classes>
+    <class name="com.outreach.testcases.BaseTest"/>
+    <class name="com.outreach.testcases.CaptureUserInfo"/>
+     <class name="com.outreach.testcases.ClickOneCognizant"/>
+     <class name="com.outreach.testcases.NavigateToOutReach"/>
+     <class name="com.outreach.testcases.MenusAndSubmenus"/>
+     <class name="com.outreach.testcases.IntrestEvents"/>
+     <class name="com.outreach.testcases.SearchFilterValidation"/>
+     <class name="com.outreach.testcases.RandomLocation"/>
+     <class name="com.outreach.testcases.SelectMyVolunteering"/>
+     <class name="com.outreach.testcases.GetVolunteerCards"/>
+    </classes>
+  </test>
+  
+  -->
+  
+</suite> <!-- Suite -->

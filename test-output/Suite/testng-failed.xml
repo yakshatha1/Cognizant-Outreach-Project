@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.outreach.Utilities.Extent_Reports"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.outreach.testcases.Test_3_Navigate_to_outreach">
+        <methods>
+          <include name="navigate_outreach"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.outreach.testcases.Test_3_Navigate_to_outreach -->
+      <class name="com.outreach.testcases.BaseTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.outreach.testcases.BaseTest -->
+      <class name="com.outreach.testcases.Test_8_click_my_volunteering">
+        <methods>
+          <include name="setup"/>
+          <include name="click_vol"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.outreach.testcases.Test_8_click_my_volunteering -->
+      <class name="com.outreach.testcases.Test_6_validate_search_filter">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="validate"/>
+        </methods>
+      </class> <!-- com.outreach.testcases.Test_6_validate_search_filter -->
+      <class name="com.outreach.testcases.Test_4_print_menus_submenus">
+        <methods>
+          <include name="setup"/>
+          <include name="print_submenu"/>
+          <include name="print_menu"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.outreach.testcases.Test_4_print_menus_submenus -->
+      <class name="com.outreach.testcases.Test_2_click_onecog">
+        <methods>
+          <include name="verifyOneCogni"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.outreach.testcases.Test_2_click_onecog -->
+      <class name="com.outreach.testcases.Test_9_fetch_volunteer_cards">
+        <methods>
+          <include name="setup"/>
+          <include name="fetch_cards"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.outreach.testcases.Test_9_fetch_volunteer_cards -->
+      <class name="com.outreach.testcases.CaptureUserInfo">
+        <methods>
+          <include name="setup"/>
+          <include name="getInfo"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.outreach.testcases.CaptureUserInfo -->
+      <class name="com.outreach.testcases.Test_5_print_interest">
+        <methods>
+          <include name="print_interest"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.outreach.testcases.Test_5_print_interest -->
+      <class name="com.outreach.testcases.Test_7_Random_Location">
+        <methods>
+          <include name="setup"/>
+          <include name="validate"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.outreach.testcases.Test_7_Random_Location -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
